@@ -1,0 +1,30 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("c:/Users/thesp/AppData/Roaming/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "c:/Users/thesp/AppData/Roaming/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("c:/Users/thesp/AppData/Roaming/.emacs.d/" (26000 34967 0 0) "url/" "smex-items" "recentf" "init.el~" "init.el" "ido.last~" "ido.last" "elpa/" "auto-save-list/" "../" "./")
+
+ ("c:/Users/thesp/AppData/Roaming/" (26000 34043 0 0) "xm1/" "winscp.rnd" "utorrent/" "Trimble Connect for SketchUp/" "Synthesia/" "SpinTires MudRunner/" "SketchUp/" "Path of Exile/" "obsidian/" "NVIDIA/" "Mozilla/" "Microsoft/" "GHISLER/" "Far Manager/" "EVE Online/" "EldenRing/" "EasyAntiCheat/" "Dropbox/" "cura/" "c" "Autodesk Installer/" "Autodesk/" "ASCON/" "Adobe/" ".emacs.d/" "../" "./")
+
+ ("c:/Program Files/" (25995 6379 0 0) "WindowsPowerShell/" "WindowsApps/" "Windows Sidebar/" "Windows Photo Viewer/" "Windows NT/" "Windows Media Player/" "Windows Mail/" "Windows Defender Advanced Threat Protection/" "Windows Defender/" "Uninstall Information/" "UltiMaker Cura 5.5.0-beta.1/" "UltiMaker Cura 5.4.0/" "UltiMaker Cura 5.3.1/" "totalcmd/" "SketchUp/" "Reference Assemblies/" "Realtek/" "pyfa/" "NVIDIA Corporation/" "Neovim/" "MSBuild/" "Mozilla Firefox/" "ModifiableWindowsApps/" "Microsoft.NET/" "Microsoft Update Health Tools/" "Microsoft SQL Server/" "Microsoft OneDrive/" "Microsoft Office/" "Microsoft Analysis Services/" "Microsoft/" "Internet Explorer/" "Hyper-V/" "HPPrintScanDoctor/" "Google/" "Git/" "Far Manager/" "Emacs/" "dotnet/" "desktop.ini" "Common Files/" "Blender Foundation/" "Betaflight/" "Autodesk/" "ASCON/" "Adobe/" "../" "./")
+
+ ("c:/Program Files/Emacs/" (25988 37805 0 0) "Uninstall.exe" "emacs-29.1/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
