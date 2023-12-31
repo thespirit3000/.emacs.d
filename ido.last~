@@ -20,7 +20,7 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/spirit3000/.emacs.d/" (26001 1423 49097 164000) "init.el" "ido.last" "ido.last~" "transient/" "eln-cache/" "elpa/" "smex-items" "recentf" "init.el~" "auto-save-list/" ".gitignore~" ".gitignore" ".git/" "../" "./")
+ ("/home/spirit3000/.emacs.d/" (26001 22700 893259 906000) ".#init.el" "init.el" "ido.last" "ido.last~" "#init.el#" "transient/" "eln-cache/" "elpa/" "smex-items" "recentf" "init.el~" "auto-save-list/" ".gitignore~" ".gitignore" ".git/" "../" "./")
 
  ("/home/spirit3000/" (26000 38025 805903 393000) ".emacs.d/" ".mutt/" ".cert/" ".password-store/" ".gnupg/" "mutt-wizard/" "Mail/" ".ssh/" ".steampid" ".steampath" "AppImages/" ".var/" ".pki/" ".steam/" ".bash_history" ".fontconfig/" "Видео/" "Изображения/" "Музыка/" "Документы/" "Общедоступные/" "Шаблоны/" "Загрузки/" "Рабочий стол/" ".local/" ".config/" ".cache/" ".bashrc" ".bash_profile" ".bash_logout" ".mozilla/" "../" "./")
 

@@ -13,6 +13,13 @@
       scroll-conservatively 10000
       scroll-preserve-screen-position 1)
 
+
+
+;; Put all Emacs customize variables & faces in its own file
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file 'noerror)
+
+
 (setq inhibit-startup-screen t)
 (menu-bar-mode -1)
 (tool-bar-mode -1)
@@ -24,7 +31,6 @@
 (setq recentf-max-saved-items 25)
 
 (ido-mode 1)
-
 (require 'package)
 (package-initialize)
 
@@ -50,23 +56,27 @@
   (load-theme 'zenburn t)
 )
 
- 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 20 Global shortcuts
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(zenburn-theme solarized-gruvbox-dark use-package solarized-theme smex magit)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+;; Navigate between buffers
+(global-set-key "\M-p" 'previous-buffer)
+(global-set-key "\M-n" 'next-buffer)
+
+(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+
+
+
+
+
+
+
+
+
+
