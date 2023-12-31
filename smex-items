@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ list-packages
  auto-fill-mode
  text-mode
  customize-themes
  cd
  5x5
  arp
- dbx
 )
 
 ;; ----- smex-data -----
@@ -15,4 +15,5 @@
  (customize-themes . 1)
  (text-mode . 1)
  (auto-fill-mode . 1)
+ (list-packages . 2)
 )

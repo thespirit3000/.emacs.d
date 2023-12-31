@@ -1,4 +1,8 @@
+
 ;; System-type definition
+(setq initial-scratch-message "For recent press C-x C-r")
+(defun display-startup-echo-area-message ()
+  (message "Let the hacking begin!"))
 (defun system-is-linux()
     (string-equal system-type "gnu/linux"))
 (defun system-is-windows()
@@ -34,32 +38,35 @@
 
 (use-package smex
   :ensure t
-  :disabled t
-  :config
-  (setq smex-save-file (concat user-emacs-directory ".smex-items"))
-  (smex-initialize)
-  :bind ("M-x" . smex))
+  :config (smex-initialize)
+)
 
 (use-package magit
   :ensure t
   :bind ("C-x g" . magit-status))
+(use-package zenburn-theme
+  :ensure t
+  :config
+  (load-theme 'zenburn t)
+)
+
+ 
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; This is your old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(solarized-gruvbox-dark))
- '(custom-safe-themes
-   '("3e200d49451ec4b8baa068c989e7fba2a97646091fd555eca0ee5a1386d56077" "51ec7bfa54adf5fff5d466248ea6431097f5a18224788d0bd7eb1257a4f7b773" "830877f4aab227556548dc0a28bf395d0abe0e3a0ab95455731c9ea5ab5fe4e1" "fee7287586b17efbfda432f05539b58e86e059e78006ce9237b8732fde991b4c" default))
- '(package-selected-packages '(smex solarized-theme)))
+ '(package-selected-packages
+   '(zenburn-theme solarized-gruvbox-dark use-package solarized-theme smex magit)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-(global-set-key "\C-x\ \C-r" 'recentf-open-files)
