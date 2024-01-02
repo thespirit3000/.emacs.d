@@ -24,13 +24,15 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
-(global-hl-line-mode t)		    
+(tooltip-mode -1)
+(set-fringe-mode -1)
+
+(setq visible-bell t)
 
 (recentf-mode 1)
 (setq recentf-max-menu-items 25)
 (setq recentf-max-saved-items 25)
 
-(ido-mode 1)
 (require 'package)
 (package-initialize)
 
@@ -42,14 +44,6 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-(use-package smex
-  :ensure t
-  :config (smex-initialize)
-)
-
-(use-package magit
-  :ensure t
-  :bind ("C-x g" . magit-status))
 (use-package zenburn-theme
   :ensure t
   :config
@@ -59,15 +53,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 20 Global shortcuts
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
-
-;; Navigate between buffers
-(global-set-key "\M-p" 'previous-buffer)
-(global-set-key "\M-n" 'next-buffer)
 
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
