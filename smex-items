@@ -1,16 +1,17 @@
 
 ;; ----- smex-history -----
 (
+ Buffer-menu-switch-other-window
+ all-the-icons-install-fonts
  cd
  5x5
  arp
  dbx
  dig
- erc
- ert
 )
 
 ;; ----- smex-data -----
 (
- 
+ (all-the-icons-install-fonts . 1)
+ (Buffer-menu-switch-other-window . 1)
 )
