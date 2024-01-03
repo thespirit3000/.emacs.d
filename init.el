@@ -1,5 +1,5 @@
 ;; System-type definition
-(setq initial-scratch-message "For recent press C-x C-r")
+(setq initial-scratch-message "For recent press C-x C-r. Projectile run C-c p")
 (defun display-startup-echo-area-message ()
   (message "Let the hacking begin!"))
 (defun system-is-linux()
@@ -175,10 +175,10 @@
 (rune/leader-keys
   "ts" '(hydra-text-scale/body :which-key "scale text"))
   
-
 (use-package projectile
   :diminish projectile-mode
   :config (projectile-mode)
+  :custom (projectile-completion-system 'ivy)
   :bind-keymap
   ("C-c p" . projectile-command-map)
   :init
@@ -186,20 +186,12 @@
     (setq projectile-project-search-path '("~/Projects/Code")))
   (setq projectile-switch-project-action #'projectile-dired))
 
+(use-package counsel-projectile
+  :config (counsel-projectile-mode))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 20 Global shortcuts
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 (global-set-key (kbd "C-M-j") 'counsel-switch-buffer)
 (global-set-key (kbd "C-M-j") 'counsel-switch-buffer)
-
-
-
-
-
-
-
-
-
-
 

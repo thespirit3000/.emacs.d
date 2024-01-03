@@ -1,0 +1,1 @@
+("d:/thesp/Projects/Code/First_code/" "~/.emacs.d/")
