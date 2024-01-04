@@ -1,1 +1,1 @@
-("d:/thesp/Projects/Code/First_code/" "~/.emacs.d/")
+("~/.emacs.d/" "d:/thesp/Projects/Code/First_code/")
