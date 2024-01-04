@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ org-todo
+ hydra-text-scale/body
+ make-empty-file
+ make-directory
+ magit-status
+ magit
  list-packages
- Buffer-menu-switch-other-window
- all-the-icons-install-fonts
- cd
- 5x5
- arp
- dbx
 )
 
 ;; ----- smex-data -----
@@ -15,4 +15,10 @@
  (all-the-icons-install-fonts . 1)
  (Buffer-menu-switch-other-window . 1)
  (list-packages . 2)
+ (magit . 1)
+ (magit-status . 1)
+ (make-directory . 1)
+ (make-empty-file . 1)
+ (hydra-text-scale/body . 1)
+ (org-todo . 1)
 )
