@@ -209,9 +209,9 @@
   (setq evil-auto-ident nil))
 
   ;;:hook (org-mode . efs/org-mode-setup)
-(use-package org
-  :config
-  (setq org-ellipsis " ()"))
+(use-package org)
+
+(setq org-hide-emphasis-markers nil) 
 
 (use-package org-bullets
   :after org
@@ -219,10 +219,10 @@
   :custom
   (org-superstar-headline-bullets-list '("◉" "○" "●" "○" "●" "○" "●")))
 
-(dolist (face '((org-level-1 . 1.2)
-                    (org-level-2 . 1.1)
-                    (org-level-3 . 1.05)
-                    (org-level-4 . 1.0)
+(dolist (face '((org-level-1 . 1.75)
+                    (org-level-2 . 1.5)
+                    (org-level-3 . 1.25)
+                    (org-level-4 . 1.1)
                     (org-level-5 . 1.1)
                     (org-level-6 . 1.1)
                     (org-level-7 . 1.1)

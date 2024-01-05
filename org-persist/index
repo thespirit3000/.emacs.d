@@ -1,0 +1,27 @@
+((:container
+  ((elisp org-element--headline-cache)
+   (elisp org-element--cache))
+  :persist-file "32/79f22b-0630-48c6-a984-7ce3b72477d6" :associated
+  (:hash "1cbdd65a41ce172456953171f971c81b" :file "d:/thesp/Документы/OrgVault/OrgTutorial.org" :inode 844424930238368)
+  :expiry 30 :last-access 1704474108.200667 :last-access-hr "2024-01-05T20:01:48+0300")
+ (:container
+  ((elisp org-element--headline-cache)
+   (elisp org-element--cache))
+  :persist-file "73/caebb4-815c-4885-9491-b77b3ce3c72b" :associated
+  (:hash "5cdf5a3d7d613249c11253f9ae6af596" :file "d:/thesp/Документы/OrgVault/org.org" :inode 1688849860368379)
+  :expiry 30 :last-access 1704471998.633942 :last-access-hr "2024-01-05T19:26:38+0300")
+ (:container
+  ((elisp org-element--headline-cache)
+   (elisp org-element--cache))
+  :persist-file "0d/698694-a035-4a9d-abee-afdbf3fcc742" :associated
+  (:hash "e7b40cd76f3165e5aaf69b69e317b265" :file "d:/thesp/Документы/worg/doc.org" :inode 281474976815711)
+  :expiry 30 :last-access 1704471783.619863 :last-access-hr "2024-01-05T19:23:03+0300")
+ (:container
+  ((elisp org-element--headline-cache)
+   (elisp org-element--cache))
+  :persist-file "8f/00cacb-8fec-4afd-9d82-f22e8cbe16da" :associated
+  (:hash "e5d9fa307224d8ee1e3e2b89ca7428ad" :file "d:/thesp/Документы/worg/orgcard.org" :inode 281474976816525)
+  :expiry 30 :last-access 1704454776.810785 :last-access-hr "2024-01-05T14:39:36+0300")
+ (:container
+  ((index "3.1"))
+  :persist-file "8a/fc4a79-cd71-4f0b-b090-6e5ca31a87f1" :associated nil :expiry never :last-access 1704474108.203354 :last-access-hr "2024-01-05T20:01:48+0300"))
