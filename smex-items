@@ -1,20 +1,20 @@
 
 ;; ----- smex-history -----
 (
- org-agenda
+ mkdir
+ list-packages
  eval-buffer
+ org-agenda
  org-mode
  org-agenda-list
  make-directory
- list-packages
- magit
 )
 
 ;; ----- smex-data -----
 (
  (all-the-icons-install-fonts . 1)
  (Buffer-menu-switch-other-window . 1)
- (list-packages . 2)
+ (list-packages . 3)
  (magit . 1)
  (magit-status . 1)
  (make-directory . 3)
@@ -23,8 +23,9 @@
  (org-todo . 1)
  (org-attach . 1)
  (org-agenda . 17)
- (eval-buffer . 7)
+ (eval-buffer . 8)
  (org-schedule . 1)
  (org-agenda-list . 2)
  (org-mode . 2)
+ (mkdir . 2)
 )

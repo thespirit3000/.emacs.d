@@ -1,1 +1,1 @@
-("~/.emacs.d/" "d:/thesp/Документы/worg/" "d:/thesp/Projects/Code/First_code/")
+("~/.emacs.d/")
