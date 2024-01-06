@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- org-todo
- hydra-text-scale/body
- make-empty-file
+ org-agenda
+ eval-buffer
+ org-mode
+ org-agenda-list
  make-directory
- magit-status
- magit
  list-packages
+ magit
 )
 
 ;; ----- smex-data -----
@@ -17,8 +17,14 @@
  (list-packages . 2)
  (magit . 1)
  (magit-status . 1)
- (make-directory . 1)
+ (make-directory . 3)
  (make-empty-file . 1)
  (hydra-text-scale/body . 1)
  (org-todo . 1)
+ (org-attach . 1)
+ (org-agenda . 17)
+ (eval-buffer . 7)
+ (org-schedule . 1)
+ (org-agenda-list . 2)
+ (org-mode . 2)
 )
