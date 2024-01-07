@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- term
- projectile-run-project
- projectile-edit-dir-locals
- treemacs
+ hydra-text-scale/body
+ projectile-configure-project
  eval-buffer
- all-the-icons-install-fonts
- set-frame-font
+ projectile-run-project
+ term
+ magit
+ magit-status
 )
 
 ;; ----- smex-data -----
@@ -15,15 +15,15 @@
  (all-the-icons-install-fonts . 2)
  (Buffer-menu-switch-other-window . 1)
  (list-packages . 4)
- (magit . 1)
- (magit-status . 1)
+ (magit . 2)
+ (magit-status . 4)
  (make-directory . 3)
  (make-empty-file . 1)
- (hydra-text-scale/body . 1)
+ (hydra-text-scale/body . 2)
  (org-todo . 1)
  (org-attach . 1)
  (org-agenda . 17)
- (eval-buffer . 20)
+ (eval-buffer . 22)
  (org-schedule . 1)
  (org-agenda-list . 2)
  (org-mode . 2)
@@ -32,6 +32,7 @@
  (treemacs . 2)
  (treemacs-icon-catalogue . 1)
  (projectile-edit-dir-locals . 1)
- (projectile-run-project . 1)
- (term . 2)
+ (projectile-run-project . 2)
+ (term . 5)
+ (projectile-configure-project . 2)
 )

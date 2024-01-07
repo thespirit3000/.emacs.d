@@ -181,7 +181,7 @@
   ("C-c p" . projectile-command-map)
   :init
   (when (file-directory-p "~/Projects/Code")
-    (setq projectile-project-search-path '("~/Projects/Code")))
+  (setq projectile-project-search-path '("~/Projects/Code")))
   (setq projectile-switch-project-action #'projectile-dired))
 
 (use-package counsel-projectile
@@ -403,7 +403,7 @@
   :hook (eshell-first-time-mode . efs/configure-eshell)
   :config
 
-  (with-eval-after-load 'esh-opt
+  (with-eval-after-load 'eshell-opt
     (setq eshell-destroy-buffer-when-process-dies t)
     (setq eshell-visual-commands '("htop" "zsh" "vim")))
 
