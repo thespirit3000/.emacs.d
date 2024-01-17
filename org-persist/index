@@ -1,0 +1,9 @@
+((:container
+  ((elisp org-element--headline-cache)
+   (elisp org-element--cache))
+  :persist-file "27/9333b5-e541-4faa-a1a6-fde7c8488225" :associated
+  (:hash "35b62023ba2fa4cfb57cf527348f1adf" :file "/home/spirit3000/Projects/OrgVault/daily/2024-01-17.org" :inode 255155)
+  :expiry 30 :last-access 1705473769.4348328 :last-access-hr "2024-01-17T09:42:49+0300")
+ (:container
+  ((index "3.1"))
+  :persist-file "8a/fc4a79-cd71-4f0b-b090-6e5ca31a87f1" :associated nil :expiry never :last-access 1705490643.559081 :last-access-hr "2024-01-17T14:24:03+0300"))

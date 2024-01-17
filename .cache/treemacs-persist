@@ -1,0 +1,9 @@
+* Default
+** Pygame
+ - path :: ~/Документы/Projects/Pygame
+* No Perspective
+** .emacs.d
+ - path :: ~/.emacs.d
+* No Tab
+** StateMachine
+ - path :: ~/Projects/Code/StateMachine
