@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- org-roam-graph
- eval-buffer
- hydra-text-scale/body
- list-packages
  treemacs
- magit
- run-python
+ hydra-text-scale/body
+ org-mode
+ eval-buffer
+ dired
+ org-roam-graph
+ list-packages
 )
 
 ;; ----- smex-data -----
@@ -19,17 +19,17 @@
  (magit-status . 4)
  (make-directory . 4)
  (make-empty-file . 1)
- (hydra-text-scale/body . 11)
+ (hydra-text-scale/body . 15)
  (org-todo . 1)
  (org-attach . 1)
  (org-agenda . 17)
- (eval-buffer . 35)
+ (eval-buffer . 37)
  (org-schedule . 1)
  (org-agenda-list . 2)
- (org-mode . 2)
+ (org-mode . 5)
  (mkdir . 3)
  (set-frame-font . 1)
- (treemacs . 17)
+ (treemacs . 18)
  (treemacs-icon-catalogue . 1)
  (projectile-edit-dir-locals . 1)
  (projectile-run-project . 2)
@@ -40,4 +40,5 @@
  (treemacs-projectile . 2)
  (run-python . 1)
  (org-roam-graph . 1)
+ (dired . 1)
 )
