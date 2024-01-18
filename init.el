@@ -134,6 +134,8 @@
 
 ;;NOTE on firs time computer you need to run command:
 ;; M-x all-the-icons-install-fonts
+;; для отображения иконок в modeline:
+;; M-x nerd-icons-install-fonts
 
 (use-package all-the-icons)
 
@@ -171,7 +173,7 @@
   (evil-collection-init))  
 
 (use-package hydra)
-
+;; 
 (defhydra hydra-text-scale (:timeout 4)
   "scale text"
   ("j" text-scale-increase "in")
