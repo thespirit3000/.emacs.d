@@ -2,3 +2,5 @@ git status
 git add .
 git commit -m "feat: eshell"
 git push
+git status
+git add .

@@ -1,1 +1,1 @@
-("~/.emacs.d/")
+("~/Projects/Code/StateMachine/" "~/Projects/Code/Pygame/" "~/.emacs.d/")
