@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- org-todo
+ counsel-org-tag
  org-schedule
- org-set-property
  org-capture
  eval-buffer
- org-mode
- org-agenda
+ eshell
+ magit-status
+ magit
 )
 
 ;; ----- smex-data -----
@@ -15,16 +15,16 @@
  (all-the-icons-install-fonts . 2)
  (Buffer-menu-switch-other-window . 1)
  (list-packages . 5)
- (magit . 6)
- (magit-status . 4)
+ (magit . 8)
+ (magit-status . 5)
  (make-directory . 5)
  (make-empty-file . 1)
  (hydra-text-scale/body . 17)
  (org-todo . 2)
  (org-attach . 1)
  (org-agenda . 20)
- (eval-buffer . 38)
- (org-schedule . 2)
+ (eval-buffer . 39)
+ (org-schedule . 4)
  (org-agenda-list . 2)
  (org-mode . 7)
  (mkdir . 3)
@@ -35,13 +35,15 @@
  (projectile-run-project . 2)
  (term . 5)
  (projectile-configure-project . 3)
- (eshell . 1)
+ (eshell . 2)
  (dired-find-file . 1)
  (treemacs-projectile . 2)
  (run-python . 1)
  (org-roam-graph . 1)
  (dired . 1)
  (org-id-copy . 1)
- (org-capture . 1)
+ (org-capture . 3)
  (org-set-property . 1)
+ (org-refile . 2)
+ (counsel-org-tag . 5)
 )

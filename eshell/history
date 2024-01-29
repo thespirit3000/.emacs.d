@@ -4,3 +4,8 @@ git commit -m "feat: eshell"
 git push
 git status
 git add .
+git commit -m "feat: org-agenda"
+git push
+git status
+:q
+q
