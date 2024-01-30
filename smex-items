@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- counsel-org-tag
- org-schedule
- org-capture
+ mu4e
  eval-buffer
+ org-refile
  eshell
+ counsel-org-tag
+ org-capture
  magit-status
- magit
 )
 
 ;; ----- smex-data -----
@@ -23,7 +23,7 @@
  (org-todo . 2)
  (org-attach . 1)
  (org-agenda . 20)
- (eval-buffer . 39)
+ (eval-buffer . 40)
  (org-schedule . 4)
  (org-agenda-list . 2)
  (org-mode . 7)
@@ -35,7 +35,7 @@
  (projectile-run-project . 2)
  (term . 5)
  (projectile-configure-project . 3)
- (eshell . 2)
+ (eshell . 3)
  (dired-find-file . 1)
  (treemacs-projectile . 2)
  (run-python . 1)
@@ -44,6 +44,7 @@
  (org-id-copy . 1)
  (org-capture . 3)
  (org-set-property . 1)
- (org-refile . 2)
+ (org-refile . 4)
  (counsel-org-tag . 5)
+ (mu4e . 2)
 )

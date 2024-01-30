@@ -4,10 +4,10 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-refile-last-stored"
  (filename . "~/Projects/OrgVault/Archive.org")
- (front-context-string . "** DONE Go to po")
- (rear-context-string . "б 09:37]\n:END:\n\n")
- (position . 298)
- (last-modified 26036 42169 645807 438000))
+ (front-context-string . "** DONE Тепловые")
+ (rear-context-string . "н 20:25]\n:END:\n\n")
+ (position . 643)
+ (last-modified 26039 57278 708903 987000))
 ("org-capture-last-stored"
  (filename . "~/.notes")
  (front-context-string . "** TODO\n  [2024-")

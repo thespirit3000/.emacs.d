@@ -9,3 +9,10 @@ git push
 git status
 :q
 q
+mbsync -a
+mkdir Mail
+ls
+em
+mbsync -a
+sudo yum install gnupg
+gpg --full-generate-key
