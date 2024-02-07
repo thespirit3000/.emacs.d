@@ -6,6 +6,7 @@
          C-c n c . org-roam-capture
          ;; Dailies
          C-c n j . org-roam-dailies-capture-today
+(C-c n d . org-roam-dailies-map)
 ")
 
 (defun display-startup-echo-area-message ()
@@ -73,16 +74,19 @@
   :config
   (setq ivy-initial-inputs-alist nil))
 
-(use-package zenburn-theme
-  :ensure t
-  :config
-  (load-theme 'zenburn t)
-)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (use-package zenburn-theme ;;
+;;   :ensure t				  ;;
+;;   :config				  ;;
+;;   (load-theme 'zenburn t)  ;;
+;; )						  ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 
 (use-package doom-modeline
   :ensure t
   :init (doom-modeline-mode)
-  :custom (doom-modeline-height 32))
+  :custom (doom-modeline-height 64))
 
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
@@ -114,7 +118,7 @@
   ;; Global settings (defaults)
   (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
         doom-themes-enable-italic t) ; if nil, italics is universally disabled
-  (load-theme 'doom-gruvbox t))
+  (load-theme 'doom-palenight t))
 
 ;;NOTE on firs time computer you need to run command:
 ;; M-x all-the-icons-install-fonts
@@ -192,7 +196,7 @@
   :config
   (evil-collection-init))
 
-(use-package forge)
+;;(use-package forge)
 (defun efs/org-mode-setup()
   (org-indent-mode)
   (variable-pitch-mode 1)
@@ -242,6 +246,7 @@
 
   (setq org-agenda-files
 	'("~/Projects/OrgVault/Tasks.org"
+	  "~/Projects/OrgVault/Routine.org"
 	  "~/Projects/OrgVault/Habits.org"
 	  "~/Projects/OrgVault/Birthdays.org"))
 
@@ -267,6 +272,7 @@
        ("@errand" . ?E)
        ("@home" . ?H)
        ("@work" . ?W)
+       ("@routine" . ?R)
        ("agenda" . ?a)
        ("planning" . ?p)
        ("publish" . ?P)
@@ -355,13 +361,18 @@
 
 (use-package org-roam
   :ensure t
+  :init
+  (setq org-roam-v2-ack t)
   :custom
   (org-roam-directory (file-truename "~/Projects/OrgVault/"))
   (org-roam-completion-everywhere t)
   (org-roam-capture-templates
-   '(("d" "default" plain
-      "%?"
+   '(("d" "default" plain "* \n\n%?\n\n* Zero links:\n\n -  \n\n* Links:\n\n -"
       :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
+      :unnarrowed t)
+	 ("z" "zero" plain 
+	  "%?"
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#_filetags: Zero")
       :unnarrowed t)
 	 ("b" "book notes" plain
  "\n* Source\n\nAuthor: %^{Author}\nTitle: ${title}\nYear: %^{Year}\n\n* Summary\n\n%?"
@@ -378,18 +389,34 @@
          ("C-c n c" . org-roam-capture)
          ;; Dailies
          ("C-c n j" . org-roam-dailies-capture-today))
+  :bind-keymap
+  ("C-c n d" . org-roam-dailies-map)
   :config
   ;; If you're using a vertical completion framework, you might want a more informative completion interface
   (setq org-roam-node-display-template (concat "${title:*} " (propertize "${tags:10}" 'face 'org-tag)))
   (org-roam-db-autosync-mode)
   ;; If using org-roam-protocol
-  (require 'org-roam-protocol))
+  (require 'org-roam-protocol)
+  (require 'org-roam-dailies))
 
 (use-package org-bullets
   :after org
   :hook (org-mode . org-bullets-mode)
   :custom
   (org-superstar-headline-bullets-list '("◉" "○" "●" "○" "●" "○" "●")))
+
+
+(use-package org-roam-ui
+    :after org-roam ;; or :after org
+;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
+;;         a hookable mode anymore, you're advised to pick something yourself
+;;         if you don't care about startup time, use
+;;  :hook (after-init . org-roam-ui-mode)
+    :config
+    (setq org-roam-ui-sync-theme t
+          org-roam-ui-follow t
+          org-roam-ui-update-on-save t
+          org-roam-ui-open-on-start t))
 
 (use-package lsp-mode
   :commands (lsp lsp-deferred)

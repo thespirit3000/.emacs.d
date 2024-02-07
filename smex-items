@@ -1,21 +1,21 @@
 
 ;; ----- smex-history -----
 (
- mu4e
- eval-buffer
- org-refile
- eshell
  counsel-org-tag
- org-capture
- magit-status
+ eval-buffer
+ org-set-property
+ org-refile
+ org-agenda-capture
+ comment-box
+ magit
 )
 
 ;; ----- smex-data -----
 (
  (all-the-icons-install-fonts . 2)
  (Buffer-menu-switch-other-window . 1)
- (list-packages . 5)
- (magit . 8)
+ (list-packages . 6)
+ (magit . 9)
  (magit-status . 5)
  (make-directory . 5)
  (make-empty-file . 1)
@@ -23,7 +23,7 @@
  (org-todo . 2)
  (org-attach . 1)
  (org-agenda . 20)
- (eval-buffer . 40)
+ (eval-buffer . 48)
  (org-schedule . 4)
  (org-agenda-list . 2)
  (org-mode . 7)
@@ -43,8 +43,17 @@
  (dired . 1)
  (org-id-copy . 1)
  (org-capture . 3)
- (org-set-property . 1)
- (org-refile . 4)
- (counsel-org-tag . 5)
+ (org-set-property . 6)
+ (org-refile . 7)
+ (counsel-org-tag . 7)
  (mu4e . 2)
+ (org-reload . 1)
+ (toggle-debug-on-error . 2)
+ (recover-this-file . 1)
+ (org-table-insert-row . 2)
+ (org-date-from-calendar . 2)
+ (calendar . 1)
+ (org-roam-ui-mode . 2)
+ (comment-box . 1)
+ (org-agenda-capture . 1)
 )
