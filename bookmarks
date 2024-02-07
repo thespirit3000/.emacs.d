@@ -4,10 +4,10 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-refile-last-stored"
  (filename . "~/Projects/OrgVault/Tasks.org")
- (front-context-string . "** TODO Проверит")
- (rear-context-string . "2024-02-06 Вт>\n\n")
- (position . 1693)
- (last-modified 26049 54639 15877 989000))
+ (front-context-string . "** TODO Акты на ")
+ (rear-context-string . "огилевэнерго]]\n\n")
+ (position . 2134)
+ (last-modified 26051 58051 525764 867000))
 ("org-capture-last-stored"
  (filename . "~/Projects/OrgVault/Tasks.org")
  (front-context-string . "** TODO Согласов")

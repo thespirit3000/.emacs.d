@@ -10,8 +10,8 @@
  (last-modified 26049 54639 15877 989000))
 ("org-capture-last-stored"
  (filename . "~/Projects/OrgVault/Tasks.org")
- (front-context-string . "** TODO \n  [2024")
+ (front-context-string . "** TODO Согласов")
  (rear-context-string)
  (position . 10)
- (last-modified 26049 54496 181571 793000))
+ (last-modified 26050 20202 752828 164000))
 )

@@ -1,10 +1,10 @@
 
 ;; ----- smex-history -----
 (
+ org-refile
  counsel-org-tag
  eval-buffer
  org-set-property
- org-refile
  org-agenda-capture
  comment-box
  magit
@@ -44,7 +44,7 @@
  (org-id-copy . 1)
  (org-capture . 3)
  (org-set-property . 6)
- (org-refile . 7)
+ (org-refile . 8)
  (counsel-org-tag . 7)
  (mu4e . 2)
  (org-reload . 1)
